@@ -8,9 +8,9 @@ $password = "";
 
 //Usado para mostrar erros
 try {
-    $con = new PDO("mysql:host={$host}; daname={$db_name}", $username, $password);
+    $con = new PDO("mysql:host={$host}; dbname={$db_name}", $username, $password);
 } catch (PDOException $exception) {
-    //echo "Connection errors: " . $exception->getMessage();
+    echo "Connection errors: " . $exception->getMessage();
 }
 
 ?>
